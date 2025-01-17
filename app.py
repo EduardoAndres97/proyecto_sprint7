@@ -10,7 +10,7 @@ st.write('Con nuestra aplicacion puedes ver los detalles de tu nuevo vehículo i
 
 casilla_transmision = st.checkbox('Transmisión') # crear casilla transmisión
 casilla_color = st.checkbox('Color') # crear casilla color
-casilla_estado = st.checkbox('Estado') #crear casilla estado
+casilla_cuentakilómetros = st.checkbox('cuentakilómetros') #crear casilla cuentakilómetros
 
 if casilla_transmision: # si la casilla de verificación está seleccionada
     st.write('Acá puedes ver la cantidad de vehículos que cuentan con transmisión automática o manual')
@@ -23,7 +23,7 @@ if casilla_color:
     fig = px.histogram(car_data,x= 'paint_color',labels={"paint_color": "Colores Disponibles"},title="Colores") # crear el gráfico
     st.plotly_chart(fig,use_container_width=True)
 
-if casilla_estado:
-    st.write('Revisa el estado de nuestros vehículos')
-    fig = px.histogram(car_data,x= 'condition',labels={"condition": "Condiciones de los vehículos"},title="Estado de Nuestros Vehículos") #crear el gráfico
+if casilla_cuentakilómetros:
+    st.write('Revisa el cuentakilómetros de nuestros vehículos')
+    fig = px.histogram(car_data,x= 'odometer',y='price',labels={"odometer": "Cuentakilómetros de los vehículos"},title="Cuentakilómetros de Nuestros Vehículos") #crear el gráfico
     st.plotly_chart(fig, use_container_width=True)
