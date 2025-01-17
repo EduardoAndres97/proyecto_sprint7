@@ -1,1 +1,2 @@
 # proyecto_sprint7
+Con esta simple aplicacion podras revisar las caracteristicas de los vehiculos en sus detalles, en el cual se proporcionan los datos de: El color de los vehiculos, la categoria de su caja de transmisión(automatico o manual) y las condiciones del vehiculo(nuevo o en caso de ser usado cuanto uso tiene el vehiculo). hacer click en el link para ir a la aplicacion y ver los datos de su disponibilidad segun sus caracteristicas.
